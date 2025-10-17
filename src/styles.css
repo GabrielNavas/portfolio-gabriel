@@ -1,0 +1,42 @@
+:root {
+  --bg: #0b0f14;
+  --panel: #121822;
+  --panel-2: #0e141b;
+  --text: #e5e7eb;
+  --muted: #9aa4b2;
+  --brand: #6c63ff;
+  --border: #1f2937;
+  --shadow: 0 6px 25px rgba(0,0,0,.35);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: var(--bg); color: var(--text); }
+
+.max { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+.gradient { background: radial-gradient(1200px 600px at 10% -10%, rgba(108,99,255,.12), transparent 60%),
+                        radial-gradient(900px 500px at 90% -20%, rgba(0,212,255,.10), transparent 55%); }
+
+.card { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
+.badge { display:inline-flex; gap:8px; align-items:center; border:1px solid var(--border); background:#0f1520; padding:6px 10px; border-radius:999px; color: var(--text); text-decoration:none;}
+.link { color: var(--text); text-decoration: none; opacity: .9; }
+.link:hover { opacity: 1; color: #fff; }
+.btn { background: var(--brand); color:#fff; padding:10px 14px; border-radius:12px; border:0; cursor: pointer; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; box-shadow: var(--shadow); }
+.btn-ghost { border:1px solid var(--border); padding:10px 14px; border-radius:12px; text-decoration:none; color: var(--text); }
+
+/* Navbar */
+.navbar { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: rgba(11,15,20,.7); border-bottom:1px solid var(--border); }
+.navbar nav { height: 64px; display:flex; align-items:center; justify-content:space-between; }
+
+section { padding: 56px 0; }
+
+/* Grids */
+.grid { display: grid; gap: 20px; }
+.grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+@media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } }
+
+footer { padding: 24px 0 40px; color: var(--muted); border-top:1px solid var(--border); }
+small, .muted { color: var(--muted); }
+h1,h2,h3,h4 { margin: 0 0 10px; }
+p { line-height: 1.6; margin: 10px 0; }
+pre { margin:0; }
