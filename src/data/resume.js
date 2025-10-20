@@ -38,43 +38,43 @@ export const resume = {
     }
   ],
   projects: [
-    {
-      title: "API ESG – Gestão Sustentável",
-      description: "API RESTful em Java + Spring Boot + Oracle, com autenticação, controle de acesso e deploy Docker.",
-      stack: ["Java", "Spring Boot", "Oracle", "Docker"],
-      links: { github: "https://github.com/GabrielNavas" }
-    },
-    {
-      title: "Solução Web – Parceiros iFood",
-      description: "Aplicação web para gestão financeira de parceiros, com HTML, CSS, JS e Oracle SQL.",
-      stack: ["HTML", "CSS", "JavaScript", "Oracle SQL"],
-      links: { github: "https://github.com/GabrielNavas" }
-    },
-    {
-      title: "GreenEnergy Nexus",
-      description: "Protótipo Power BI para controle e simulação de energia solar e nuclear com IA e dashboards.",
-      stack: ["Power BI", "Data"],
-      links: { github: "https://github.com/GabrielNavas" }
-    },
-    {
-      title: "Sistema de Drones Híbridos Aquático-Aéreo",
-      description: "Projeto experimental em Python + Java, com rastreamento e controle em tempo real.",
-      stack: ["Python", "Java"],
-      links: { github: "https://github.com/GabrielNavas" }
-    },
-    {
-      title: "Simulador ESG (Android)",
-      description: "MVP interativo em Android Studio, calculando impacto ambiental com base em hábitos diários.",
-      stack: ["Android", "Kotlin/Java"],
-      links: { github: "https://github.com/GabrielNavas" }
-    },
-    {
-      title: "Automação de Produção (Negócio Local)",
-      description: "Planilha inteligente para cálculo de insumos e produtividade — redução de erros manuais em 80%.",
-      stack: ["Excel", "Automação"],
-      links: { github: "https://github.com/GabrielNavas" }
-    }
-  ],
+  {
+    title: "API ESG – Gestão Sustentável",
+    description: "API RESTful em Java + Spring Boot + Oracle, com autenticação, controle de acesso e deploy Docker.",
+    stack: ["Java", "Spring Boot", "Oracle", "Docker"],
+    links: { github: "https://github.com/GabrielNavas" }
+  },
+  {
+    title: "Solução Web – Parceiros iFood",
+    description: "Aplicação web para gestão financeira de parceiros, com HTML, CSS, JS e Oracle SQL.",
+    stack: ["HTML", "CSS", "JavaScript", "Oracle SQL"],
+    links: { github: "https://github.com/GabrielNavas" }
+  },
+  {
+    title: "GreenEnergy Nexus",
+    description: "Protótipo Power BI para controle e simulação de energia solar e nuclear com IA e dashboards.",
+    stack: ["Power BI", "Data"],
+    links: { github: "https://github.com/GabrielNavas" }
+  },
+  {
+    title: "Sistema de Drones Híbridos Aquático-Aéreo",
+    description: "Projeto experimental em Python + Java, com rastreamento e controle em tempo real.",
+    stack: ["Python", "Java"],
+    links: { github: "https://github.com/GabrielNavas" }
+  },
+  {
+    title: "Simulador ESG (Android)",
+    description: "MVP em Android Studio para cálculo de impacto ambiental com base em hábitos diários.",
+    stack: ["Android", "Kotlin/Java"],
+    links: { github: "https://github.com/GabrielNavas" }
+  },
+  {
+    title: "Automação de Produção (Negócio Local)",
+    description: "Planilha inteligente para cálculo de insumos e produtividade; redução de erros manuais em ~80%.",
+    stack: ["Excel", "Automação"],
+    links: { github: "https://github.com/GabrielNavas" }
+  }
+],
   education: [
     { course: "Tecnologia em Análise e Desenvolvimento de Sistemas", school: "FIAP — São Paulo, SP", period: "Fev/2024 – Dez/2025 (previsão)" }
   ],
