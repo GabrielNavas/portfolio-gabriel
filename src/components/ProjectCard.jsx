@@ -1,16 +1,25 @@
-export default function ProjectCard({ title, description, stack=[], links={} }) {
+// src/components/ProjectCard.jsx
+export default function ProjectCard({ title, description, tags = [], githubUrl }) {
   return (
-    <article className="card" style={{padding:20}}>
-      <header style={{display:'flex',alignItems:'flex-start',justifyContent:'space-between',gap:12}}>
-        <h4 style={{margin:0, fontSize:'18px'}}>{title}</h4>
-        {links.github && <a className="badge" href={links.github} target="_blank" rel="noreferrer">GitHub</a>}
-      </header>
-      <p className="muted" style={{marginTop:8}}>{description}</p>
-      {stack.length > 0 && (
-        <ul style={{display:'flex', flexWrap:'wrap', gap:8, marginTop:12, padding:0, listStyle:'none'}}>
-          {stack.map((s,i)=>(<li key={i} className="badge">{s}</li>))}
-        </ul>
+    <article className="card" style={{ position: "relative" }}>
+      {githubUrl && (
+        <a
+          href={githubUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="badge"
+          style={{ position: "absolute", top: 12, right: 12 }}
+        >
+          GitHub
+        </a>
       )}
+      <h3 style={{ marginBottom: 8 }}>{title}</h3>
+      <p className="muted" style={{ marginBottom: 14 }}>{description}</p>
+      <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+        {tags.map((t, i) => (
+          <span key={i} className="chip">{t}</span>
+        ))}
+      </div>
     </article>
-  )
+  );
 }

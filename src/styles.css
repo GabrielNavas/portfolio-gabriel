@@ -40,3 +40,58 @@ small, .muted { color: var(--muted); }
 h1,h2,h3,h4 { margin: 0 0 10px; }
 p { line-height: 1.6; margin: 10px 0; }
 pre { margin:0; }
+/* estilos mínimos */
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 16px 16px 18px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  text-decoration: none;
+  color: inherit;
+}
+/* container central */
+.max {
+  max-width: 1200px;   /* garante largura boa para 2 colunas */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* grid base */
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr; /* mobile: 1 coluna */
+}
+
+/* desktop: 2 colunas */
+@media (min-width: 880px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* cartões e badges (se precisar) */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px 16px 18px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  text-decoration: none;
+  color: inherit;
+}
