@@ -48,7 +48,7 @@ export const resume = {
     title: "Solução Web – Parceiros iFood",
     description: "Aplicação web para gestão financeira de parceiros, com HTML, CSS, JS e Oracle SQL.",
     stack: ["HTML", "CSS", "JavaScript", "Oracle SQL"],
-    links: { github: "https://github.com/GabrielNavas/ifood-parceiros-web" }
+    links: { github: "https://github.com/GabrielNavas/ifood-parceiros" }
   },
   {
     title: "GreenEnergy Nexus",
@@ -60,7 +60,7 @@ export const resume = {
     title: "Sistema de Drones Híbridos Aquático-Aéreo",
     description: "Projeto experimental em Python + Java, com rastreamento e controle em tempo real.",
     stack: ["Python", "Java"],
-    links: { github: "https://github.com/GabrielNavas/drones-hibridos-aqua-aereo" }
+    links: { github: "https://github.com/GabrielNavas/drone-hibrido-aquatico-aereo" }
   },
   {
     title: "Simulador ESG (Android)",
